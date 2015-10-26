@@ -6,47 +6,9 @@
   "scripts": {
     "postdeploy": "composer install"
   },
-  "addons": ["heroku-postgresql"],
   "env": {
     "PHP_ENV": "production",
-    "PHP_SERVE_STATIC_FILES": "true",
-    "AWS_ACCESS_KEY_ID": {
-      "description": "Obtained when you create a user in Amazon AWS. https://console.aws.amazon.com/iam/home?#users"
-    },
-    "AWS_SECRET_ACCESS_KEY": {
-      "description": "Obtained when you create a user in Amazon AWS. https://console.aws.amazon.com/iam/home?#users"
-    },
-    "AUTH_KEY": {
-      "description": "https://api.wordpress.org/secret-key/1.1/salt/",
-      "generator": "secret"
-    },
-    "SECURE_AUTH_KEY": {
-      "description": "https://api.wordpress.org/secret-key/1.1/salt/",
-      "generator": "secret"
-    },
-    "LOGGED_IN_KEY": {
-      "description": "https://api.wordpress.org/secret-key/1.1/salt/",
-      "generator": "secret"
-    },
-    "NONCE_KEY": {
-      "description": "https://api.wordpress.org/secret-key/1.1/salt/",
-      "generator": "secret"
-    },
-    "AUTH_SALT": {
-      "description": "https://api.wordpress.org/secret-key/1.1/salt/",
-      "generator": "secret"
-    },
-    "SECURE_AUTH_SALT": {
-      "description": "https://api.wordpress.org/secret-key/1.1/salt/",
-      "generator": "secret"
-    },
-    "LOGGED_IN_SALT": {
-      "description": "https://api.wordpress.org/secret-key/1.1/salt/",
-      "generator": "secret"
-    },
-    "NONCE_SALT": {
-      "description": "https://api.wordpress.org/secret-key/1.1/salt/",
-      "generator": "secret"
-    }
-  }
+    "PHP_SERVE_STATIC_FILES": "true"
+  },
+  "addons": ["heroku-postgresql"]
 }
