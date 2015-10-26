@@ -1,18 +1,18 @@
 {
-  "name": "PHP Starter",
-  "description": "start php app on heroku via api",
-  "website": "http://php.net",
-  "repository": "https://github.com/toroio-alex/heroku-php-test",
-  "scripts": {
-    "postdeploy": "composer install"
-  },
+  "name": "Heroku Wordpress",
+  "description": "One-click install for Wordpress on Heroku.",
+  "logo": "https://s.w.org/about/images/logos/wordpress-logo-notext-rgb.png",
+  "keywords": [
+    "heroku",
+    "wordpress",
+    "postgresql",
+    "blog"
+  ],
   "addons": [
     "heroku-postgresql:dev",
     "sendgrid:starter"
   ],
   "env": {
-    "PHP_ENV": "production",
-    "PHP_SERVE_STATIC_FILES": "true",
     "AWS_ACCESS_KEY_ID": {
       "description": "Obtained when you create a user in Amazon AWS. https://console.aws.amazon.com/iam/home?#users"
     },
