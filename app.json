@@ -7,7 +7,7 @@
     "postdeploy": "composer install"
   },
   "addons": [
-    "heroku-postgresql:dev",
+    "heroku-postgresql",
     "sendgrid:starter"
   ],
   "env": {
