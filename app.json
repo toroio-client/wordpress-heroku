@@ -1,0 +1,55 @@
+{
+  "name": "Heroku Wordpress",
+  "description": "One-click install for Wordpress on Heroku.",
+  "logo": "https://s.w.org/about/images/logos/wordpress-logo-notext-rgb.png",
+  "keywords": [
+    "heroku",
+    "wordpress",
+    "postgresql",
+    "blog"
+  ],
+  "addons": [
+    "heroku-postgresql:dev",
+    "sendgrid:starter"
+  ],
+  "env": {
+    "AWS_ACCESS_KEY_ID": {
+      "description": "Obtained when you create a user in Amazon AWS. https://console.aws.amazon.com/iam/home?#users"
+    },
+    "AWS_SECRET_ACCESS_KEY": {
+      "description": "Obtained when you create a user in Amazon AWS. https://console.aws.amazon.com/iam/home?#users"
+    },
+    "AUTH_KEY": {
+      "description": "https://api.wordpress.org/secret-key/1.1/salt/",
+      "generator": "secret"
+    },
+    "SECURE_AUTH_KEY": {
+      "description": "https://api.wordpress.org/secret-key/1.1/salt/",
+      "generator": "secret"
+    },
+    "LOGGED_IN_KEY": {
+      "description": "https://api.wordpress.org/secret-key/1.1/salt/",
+      "generator": "secret"
+    },
+    "NONCE_KEY": {
+      "description": "https://api.wordpress.org/secret-key/1.1/salt/",
+      "generator": "secret"
+    },
+    "AUTH_SALT": {
+      "description": "https://api.wordpress.org/secret-key/1.1/salt/",
+      "generator": "secret"
+    },
+    "SECURE_AUTH_SALT": {
+      "description": "https://api.wordpress.org/secret-key/1.1/salt/",
+      "generator": "secret"
+    },
+    "LOGGED_IN_SALT": {
+      "description": "https://api.wordpress.org/secret-key/1.1/salt/",
+      "generator": "secret"
+    },
+    "NONCE_SALT": {
+      "description": "https://api.wordpress.org/secret-key/1.1/salt/",
+      "generator": "secret"
+    }
+  }
+}
