@@ -6,10 +6,7 @@
   "scripts": {
     "postdeploy": "composer install"
   },
-  "addons": [
-    "heroku-postgresql",
-    "sendgrid:starter"
-  ],
+  "addons": ["heroku-postgresql"],
   "env": {
     "PHP_ENV": "production",
     "PHP_SERVE_STATIC_FILES": "true",
